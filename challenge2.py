@@ -15,17 +15,14 @@ def main():
 
     circle1 = Circle(Point(450, 170), radius)
     circle1.setFill("red")
-    circle1.setOutline("red")
     circle1.draw(window)
 
     circle2 = Circle(Point(500, 170), radius)
     circle2.setFill("blue")
-    circle2.setOutline("blue")
     circle2.draw(window)
 
     circle3 = Circle(Point(550, 170), radius)
     circle3.setFill("yellow")
-    circle3.setOutline("yellow")
     circle3.draw(window)
 
     # getting click position until overlapping a radio button
