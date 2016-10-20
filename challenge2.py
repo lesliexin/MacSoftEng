@@ -15,15 +15,23 @@ def main():
 
     circle1 = Circle(Point(450, 170), radius)
     circle1.setFill("red")
+    circle1.setOutline("red")
     circle1.draw(window)
 
     circle2 = Circle(Point(500, 170), radius)
     circle2.setFill("blue")
+    circle2.setOutline("blue")
     circle2.draw(window)
 
     circle3 = Circle(Point(550, 170), radius)
     circle3.setFill("yellow")
+    circle3.setOutline("yellow")
     circle3.draw(window)
+
+    # add text on top of buttons
+    
+    message = Text(Point(500,150), "Choose the color of the square and start it rolling by clicking on one of the three radio buttons")
+
 
     # getting click position until overlapping a radio button
 
@@ -48,9 +56,9 @@ def main():
     # hides buttons before moving
     
     wRect = Rectangle(Point(435, 150), Point(645, 200))
-    wRect.draw(window)
-    wRect.setFill("white")
     wRect.setOutline("white")
+    wRect.setFill("white")
+    wRect.draw(window)
 
     # move square to the centre
     
@@ -75,7 +83,7 @@ def main():
         elif inside(click, circle3):
             color = "yellow"
 
-    # fills square and moves it
+    # fills square
 
     square.setFill(color)
     square.setOutline(color)
