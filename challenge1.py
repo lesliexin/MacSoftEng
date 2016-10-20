@@ -11,7 +11,6 @@ def main():
     window = GraphWin("Challenge 1", width, height)
 
     square = Rectangle(Point(0, 400), Point(100, 500))
-    square.setOutline("black")
     square.draw(window)
 
     circle1 = Circle(Point(450, 170), radius)
@@ -47,6 +46,7 @@ def main():
     # fills square and moves it
 
     square.setFill(color)
+    square.setOutline(color)
 
     while square.getP2().getX() <= width:
         square.move(5, 0)
