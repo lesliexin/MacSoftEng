@@ -41,19 +41,16 @@ def main():
 
     #radio button 1 (red)
     c1 = Circle(Point(450,170),rad)
-    c1.setOutline("black")
     c1.setFill("red")
     c1.draw(w)
 
     #radio button 2 (blue)
     c2 = Circle(Point(500,170),rad)
-    c2.setOutline("black")
     c2.setFill("blue")
     c2.draw(w)
 
     #radio button 3 (yellow)
     c3 = Circle(Point(550,170),rad)
-    c3.setOutline("black")
     c3.setFill("yellow")
     c3.draw(w)
 
