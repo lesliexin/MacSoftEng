@@ -30,9 +30,18 @@ def main():
 
     # add text on top of buttons
     
-    message = Text(Point(500,150), "Choose the color of the square and start it rolling by clicking on one of the three radio buttons")
-
-
+    message1 = Text(Point(500,100), "Choose the color of the square and start it rolling")
+    message1.setTextColor("blue")
+    message1.draw(window)
+    message1.setStyle("bold")
+    message1.setSize(14)
+    
+    message2 = Text(Point(500,120), "by clicking on one of the three radio buttons")
+    message2.setTextColor("blue")
+    message2.draw(window)   
+    message2.setStyle("bold")
+    message2.setSize(14)
+    
     # getting click position until overlapping a radio button
 
     color = "grey"
@@ -55,7 +64,7 @@ def main():
 
     # hides buttons before moving
     
-    wRect = Rectangle(Point(435, 150), Point(645, 200))
+    wRect = Rectangle(Point(300, 80), Point(800, 200))
     wRect.setOutline("white")
     wRect.setFill("white")
     wRect.draw(window)
